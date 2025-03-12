@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 // Serve static files from the 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Serve the index.html on the root path "/"
 app.get('/', (req, res) => {
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 // Handle file download request
 app.get('/download', (req, res) => {
-  const filePath = '/Users/MarkDanyol/fernandez_conceptual.pdf';
+  const filePath = 'fernandez_conceptual.pdf';
 
   console.log(`Attempting to download file from: ${filePath}`);
 
